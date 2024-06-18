@@ -1,0 +1,75 @@
+<!-- @format -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart-Login</title>
+    <script src="../JS/check-home-login.js"></script>
+
+    <link
+      rel="shortcut icon"
+      href="../images/5087579.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="../CSS/all.min.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top drop-shadow">
+      <div class="container">
+        <h2 class="mb-0 navbar-brand">
+          <a href="#" class="h5 link-light link-underline-opacity-0"
+            >SMART LOGIN</a
+          >
+        </h2>
+        <button
+          class="navbar-toggler toggler-btn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars fs-3"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-2 mt-lg-0">
+            <li class="nav-item">
+              <button
+                id="logoutBtn"
+                class="w-100 nav-link btn btn-outline-warning rounded-1 px-2 logout"
+              >
+                Logout
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="container home-content">
+        <div class="row w-75 m-auto align-items-center vh-100">
+          <div class="log-in text-center p-5 drop-shadow">
+            <h1 class="main-color mb-3">
+              Welcome <span class="username"></span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/home.js"></script>
+  </body>
+</html>

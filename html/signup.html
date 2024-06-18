@@ -1,0 +1,109 @@
+<!-- @format -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart-Login</title>
+    <script src="../JS/check-signup-login.js"></script>
+
+    <link
+      rel="shortcut icon"
+      href="../images/5087579.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="../CSS/all.min.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="container px-5">
+        <div class="row w-75 m-auto my-5 px-5">
+          <div class="log-in text-center p-5 drop-shadow">
+            <h1 class="main-color mb-3">Smart Login System</h1>
+            <form>
+              <input
+                type="text"
+                class="form-control form-changes"
+                id="signupName"
+                placeholder="Enter your name"
+              />
+              <span class="d-none"></span>
+              <p class="mb-0 d-none text-start text-danger">
+                *Must Contain at least
+                <span class="fw-bolder fs-6">3 characters</span>
+              </p>
+              <input
+                type="text"
+                class="form-control form-changes mt-3"
+                id="signupEmail"
+                placeholder="Enter your email"
+              />
+              <span class="d-none"></span>
+              <p class="mb-0 d-none text-start text-danger">
+                *ex. test@gmail.com
+              </p>
+              <input
+                type="password"
+                class="form-control form-changes mt-3"
+                id="signupPassword"
+                placeholder="Enter your password"
+              />
+              <div class="me-auto mt-2 text-start check-box">
+                <input type="checkbox" id="showPass" />
+                <label for="showPass" class="showPassLabel"
+                  >Show Password</label
+                >
+              </div>
+              <p class="mb-0 d-none text-start text-danger">
+                * Passwords must be at least 8 characters.
+                <br />&nbsp;&nbsp;ex. gr3at@3wdsG
+              </p>
+              <p class="mb-0 mt-3 d-none text-center text-danger exist">
+                email already exists
+              </p>
+              <p class="mb-0 mt-3 d-none text-center text-danger required">
+                All inputs is required
+              </p>
+              <p class="mb-0 mt-3 d-none text-center text-success success">
+                Sign Up Successfully
+              </p>
+              <p
+                class="mb-0 mt-3 d-none text-center text-danger Invalid-Inputs"
+              >
+                Invalid Inputs
+              </p>
+              <button
+                type="button"
+                class="mt-4 btn btn-outline-info w-100 login"
+                id="signup"
+              >
+                Sign Up
+              </button>
+              <a target="_self"></a>
+            </form>
+            <p>
+              You have an account?
+              <a
+                href="../index.html"
+                target="_self"
+                class="link-light link-underline-opacity-100-hover link-underline-opacity-0"
+                >Sign in</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../JS/signup.js"></script>
+  </body>
+</html>
