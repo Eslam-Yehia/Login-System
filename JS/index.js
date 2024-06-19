@@ -21,8 +21,8 @@ loginPassword.addEventListener("input", function () {
   removeMessage();
 });
 
-document.querySelector(".check-box").addEventListener("click",ShowPass)
-document.querySelector(".showPassLabel").addEventListener("click",ShowPass)
+document.querySelector(".check-box").addEventListener("click", ShowPass);
+document.querySelector(".showPassLabel").addEventListener("click", ShowPass);
 
 function validate(regex, element) {
   if (element.value.match(regex)) {
@@ -44,7 +44,7 @@ function login() {
     validate(validateLoginEmail, loginEmail) &&
     validate(validateLoginPassword, loginPassword)
   ) {
-    if (checkUser()) {
+    if (checkUser() === true) {
       {
         window.open("./html/home.html", "_self");
       }
@@ -63,11 +63,12 @@ function checkUser() {
         var userName = usersData[i].name;
         localStorage.removeItem("userName");
         localStorage.setItem("userName", userName);
+
         return true;
+      } else {
+        return false;
       }
-      return false;
     }
-    return false;
   }
 }
 

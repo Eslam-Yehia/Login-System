@@ -16,7 +16,7 @@ body {
   border-color: #ced4da;
   outline: 0;
 }
-.gray{
+.gray {
   color: #ced4da;
 }
 .form-changes::placeholder {
@@ -48,6 +48,6 @@ body {
 .toggler-btn i {
   color: #929a9f;
 }
-.check-box{
+.check-box {
   width: fit-content;
 }
